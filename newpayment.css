@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    
+   
+}
+
+.container{ background-color: lightgreen;
+    padding: #000;
+    border: 0.1px solid lightgrey;
+    border-radius: none;
+
+}
+
+.main_heading{
+    background-color: lightgreen;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px 40px;
+    text-align:left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 0.2px;
+    margin:10px;
+}
+.form{
+    padding: 40px 40px;
+    background-color: #ccc;
+    border-radius: none;
+    font-weight: 700;
+    margin:none;
+   
+}
+
+input[type="submit"] {
+ border-radius: 7px;
+ background-color: lightseagreen;
+ color: white;
+ border:none;
+ padding: 12px 20px;
+}
+h2 {
+
+font-weight:700;text-align: center;
+color: #302e2e;
+font-family: Calibri, 'Trebuchet MS', sans-serif;
+font-size: 35px;
+background-color: rgb(81, 207, 165);
+border-radius: 4px;
+text-align: 100%;
+padding: 0.2px 50px;
+}
+
+#card_type{
+    text-align: left;
+padding: 0.2px;
+font: weight 700px;
+}

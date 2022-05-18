@@ -1,0 +1,18 @@
+  table,tr,th,td{
+       border: 2px  solid black;
+       border-collapse:separate;
+       padding: 10px;
+       border-spacing: 5px;
+}
+
+th{
+  background-color: burlywood;
+}
+
+td{
+  background-color: crimson;
+}
+
+.class{
+  background-color: darkgrey;
+}
