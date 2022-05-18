@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid2challange</title>
+    <style>
+        .container{
+            display: grid;
+
+           /* grid-template-columns: 200px 200px 200px;*/
+           /* grid-template-rows: 200px 200px 200px;*/
+          /* grid-template-columns: 1fr 1fr 1fr 1fr;
+                   Or */
+           /*grid-template-columns: repeat(4,1fr); */
+           grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+           grid-gap:10px;
+           grid-auto-rows: minmax(100px,auto);
+           grid-auto-columns: minmax(50px,auto);
+        }
+        .items{
+            background-color: yellow;
+           
+        }
+#item-1{
+   grid-column-start: 2;
+   grid-column-end: 6;
+   padding-left: 20px;
+   padding-top: 30px;
+}
+#item-2{
+   grid-row-start: 1;
+   grid-row-end: 9;
+   padding-left: 20px;
+   padding-top: 30px;
+}
+#item-3{
+   grid-row-start: 2;
+   grid-row-end: 8;
+   grid-column-start: 2;
+   grid-column-end: 5;
+   padding-left: 20px;
+   padding-top: 30px;
+}
+#item-4{
+   grid-row-start: 2;
+   grid-row-end: 8;
+   padding-left: 20px;
+   padding-top: 30px;
+}
+#item-5{
+   grid-column-start: 2;
+   grid-column-end: 6;
+   padding-left: 20px;
+   padding-top: 30px;
+}
+ 
+     /*   #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            coloumn-gap: 120 px;
+            row-gap:20 px;
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"id="item-1">Header</div>
+        <div class="items" id="item-2">Nav</div>
+        <div class="items" id="item-3">Article</div>
+        <div class="items" id="item-4">Ads</div>
+        <div class="items" id="item-5">Footer</div>
+    </div>
+</body>
+</html>

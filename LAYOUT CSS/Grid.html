@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+           /* grid-template-columns: 200px 200px 200px;*/
+           /* grid-template-rows: 200px 200px 200px;*/
+          /* grid-template-columns: 1fr 1fr 1fr 1fr;
+                   Or */
+           /*grid-template-columns: repeat(4,1fr); */
+           grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+           grid-gap:20px;
+           grid-auto-rows: minmax(100px,auto);
+           grid-auto-columns: minmax(50px,auto);
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px green solid;
+            border-radius: 3px ;
+        }
+#item-1{
+   grid-column-start: 1;
+   grid-column-end: 6;
+}
+
+     /*   #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            coloumn-gap: 120 px;
+            row-gap:20 px;
+
+        } */
+        .item-1-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nested-item{
+            border: 3px greenyellow solid;
+            border-radius: 3px;
+            background-color: aquamarine;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1-container" id="item-1">
+            <div class="nested-item">Dabba mai dabba 1</div>
+            <div class="nested-item">Dabba mai dabba 2</div>
+            <div class="nested-item">Dabba mai dabba 3</div>
+        </div>
+        <div class="items" id="item-2">Dabba 2</div>
+        <div class="items">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+        <div class="items">Dabba 5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries : width</title>
+    <style>
+        html {
+            font-size: 1em;
+        }
+
+        @media screen and ( width: 600px) {
+            body{
+                color: red;
+            }
+        }
+
+        @media screen and ( max-width: 600px) {
+            .p{
+                color: royalblue;
+            }
+        }
+
+        @media (orientation: landscape) {
+            .q{
+                color: purple;
+            }
+        }
+
+        @media screen and ( max-width: 600px) and (orientation: landscape) {
+            .r{
+                color: turquoise;  
+            }  
+        } 
+
+        @media screen and (max-width: 600px),
+        screen and (orientation: landscape){
+            .s{
+              color: yellow;
+            }
+        }  
+
+        @media not all and (orientation: landscape)  {
+            .t{
+                color: tan;
+            }
+        }
+
+     </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores illum quisquam nemo necessitatibus dolor quae consectetur exercitationem, minima earum quia maxime, nam maiores eum? Molestiae labore aliquid reprehenderit soluta velit, nobis aliquam, possimus, recusandae beatae qui necessitatibus mollitia architecto facilis.</p>
+<br>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque deserunt corrupti eaque iusto eligendi iure? Distinctio eos vel debitis tempora officiis tempore blanditiis maxime! Nemo, quae ipsam.</p>
+<br>
+    <p class="q">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dolorem possimus deleniti debitis modi quasi officiis odit tempore sint assumenda eligendi dolor libero voluptatibus maxime officia veritatis delectus. Nihil, in?</p>
+<br>
+    <p class="r">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione incidunt repudiandae commodi provident consequatur quam architecto distinctio recusandae placeat velit, impedit, dolores atque repellendus eveniet.</p>
+<br>
+    <p class="s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione incidunt repudiandae commodi provident consequatur quam architecto distinctio recusandae placeat velit, impedit, dolores atque repellendus eveniet.</p>
+<br>
+    <p class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic recusandae corrupti accusamus? Minus inventore enim dolore ratione aperiam ad in adipisci, facere ab porro neque voluptate nobis placeat veniam quidem, nam dicta aspernatur nesciunt. Sed?</p>
+</body>
+</html>

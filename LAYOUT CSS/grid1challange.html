@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid1challange</title>
+    <style>
+        .container{
+            display: grid;
+
+           /* grid-template-columns: 200px 200px 200px;*/
+           /* grid-template-rows: 200px 200px 200px;*/
+          /* grid-template-columns: 1fr 1fr 1fr 1fr;
+                   Or */
+           /*grid-template-columns: repeat(4,1fr); */
+           grid-template-columns: repeat(6,1fr);
+           grid-gap:10px;
+           grid-auto-rows: minmax(36px,auto);
+           grid-auto-columns: minmax(50px,auto);
+
+        }
+        .items{
+            background-color: lightgreen;
+            padding-left: 5px;
+            padding-top: 5px;
+            border-radius: 3px;
+           
+        }
+#item-1{
+   grid-row-start: 1;
+   grid-row-end:13;
+}
+#item-2{
+    grid-row-start: 1;
+   grid-row-end:7;
+}
+#item-3{
+    grid-row-start: 7;
+   grid-row-end:13;
+}
+#item-4{
+    grid-row-start: 1;
+   grid-row-end:5;
+}
+#item-5{
+    grid-row-start: 5;
+   grid-row-end:9;
+}
+#item-6{
+    grid-row-start: 9;
+   grid-row-end:13;
+}
+#item-7{
+    grid-row-start: 1;
+   grid-row-end:4;
+}
+#item-8{
+    grid-row-start: 4;
+   grid-row-end:7;
+}
+#item-9{
+    grid-row-start: 7;
+   grid-row-end:10;
+}
+#item-10{
+    grid-row-start: 10;
+   grid-row-end:13;
+}
+#item-11{
+    grid-row-start: 1;
+   grid-row-end:3;
+}
+#item-12{
+    grid-row-start: 3;
+   grid-row-end:5;
+}
+#item-13{
+    grid-row-start: 5;
+   grid-row-end:7;
+}
+#item-14{
+    grid-row-start: 7;
+   grid-row-end:9;
+}
+#item-15{
+    grid-row-start: 9;
+   grid-row-end:11;
+}
+#item-16{
+    grid-row-start: 11;
+   grid-row-end:13;
+}
+
+
+ 
+     /*   #item-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            coloumn-gap: 120 px;
+            row-gap:20 px;
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item-1">1</div>
+        <div class="items" id="item-2">2</div>
+        <div class="items" id="item-3">3</div>
+        <div class="items" id="item-4">4</div>
+        <div class="items" id="item-5">5</div>
+        <div class="items" id="item-6">6</div>
+        <div class="items" id="item-7">7</div>
+        <div class="items" id="item-8">8</div>
+        <div class="items" id="item-9">9</div>
+        <div class="items" id="item-10">10</div>
+        <div class="items" id="item-11">11</div>
+        <div class="items" id="item-12">12</div>
+        <div class="items" id="item-13">13</div>
+        <div class="items" id="item-14">14</div>
+        <div class="items" id="item-15">15</div>
+        <div class="items" id="item-16">16</div>
+        <div class="items" id="item-17">17</div>
+        <div class="items" id="item-18">18</div>
+        <div class="items" id="item-19">19</div>
+        <div class="items" id="item-20">20</div>
+        <div class="items" id="item-21">21</div>
+        <div class="items" id="item-22">22</div>
+        <div class="items" id="item-23">23</div>
+        <div class="items" id="item-24">24</div>
+        <div class="items" id="item-25">25</div>
+        <div class="items" id="item-26">26</div>
+        <div class="items" id="item-27">27</div>
+        <div class="items" id="item-28">28</div>
+    </div>
+</body>
+</html>
